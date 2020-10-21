@@ -161,6 +161,7 @@ public class JSONObjectTest {
 				.set("list", JSONUtil.createArray().set("a").set("b")).set("testEnum", "TYPE_A");
 
 		TestBean bean = json.toBean(TestBean.class);
+
 		Assert.assertEquals("a", bean.getList().get(0));
 		Assert.assertEquals("b", bean.getList().get(1));
 
